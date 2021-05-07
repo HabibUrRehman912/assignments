@@ -1,0 +1,33 @@
+{% extends "hello/layout.html" %}
+
+
+{%block body %}
+
+<h1>Flight : {{Flights.id}}</h1>
+    <ul>
+        <li>Origin : {{Flights.origin}}</li>
+        <li>Destination : {{Flights.destination}}</li>
+    </ul>
+
+    <h2>Passenger</h2>
+<ul>
+    {%for p in passengers%}
+    <li>{{p}}</li>
+    {%empty%}
+    <li>No Passengers</li>
+    {%endfor%}
+    </ul>
+<form action="{% url 'book' Flights.id %}" method = "POST">
+    {% csrf_token %}
+    <h2>Add Passenger</h2>
+    <select name="passengers" id="">
+
+{% for i in non_passengers %}
+<option value="{{i.id}}">{{i}}</option>
+    <input type="submit" value="Save">
+{% endfor %}
+    
+    </select>
+</form>
+    <a href="{% url 'index' %}">Back to Flights</a>
+{%endblock%}
