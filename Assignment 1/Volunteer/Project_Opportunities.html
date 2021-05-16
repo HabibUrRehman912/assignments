@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevationchanges.info</title>
+    <link rel = "icon" href ="../Images/Graphiclogo.png"  type = "image/x-icon">
+    <link href="../_Links/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="../Images/logo.png" alt="Main Logog" height="100px">
+    </header>
+    <nav>
+      <ul>
+          <li><a  href="../Index.html">Home</a></li>
+          <li><a href="Community_Service_Opportunities.html"> Volunteer</a>
+          <ol style="list-style-type: none;">
+              <li><a href="Community_Service_Opportunities.html">Our Projects</a> </li>
+              <li><a class="active" href="Project_Opportunities.html">Join Us</a></li>
+          </ol>
+      </li>
+          <li><a href="../ContactUs.html">Contact</a></li>
+          <li><a  href="../AboutUs.html">About Us</a></li>
+        </ul>
+  </nav>
+        <h1 style="text-align: center;">Registration Form</h1>
+       
+        <div id = "form">
+          <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Warning!</strong> all fields required.,</strong>
+          </div>
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              <label for="">Address</label>
+              <textarea cols="100" rows="5"></textarea>
+              <label >Occupation</label>
+              <input type="text" >
+              <label >Area of study</label>
+              <input type="text" >
+              <label for="cnt">Contact #</label>
+              <input type="text" placeholder="Enter your contact">
+              <label for="eamil">Email</label>
+              <input type="text" id="email" name="email" placeholder="Your Email..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            
+              <label for="">Position Applied For</label> <br>
+            <input type="checkbox">Administrative Support <br>
+            <input type="checkbox" >Physician Directory Specialist <br>
+            <input type="checkbox" >Grant Writer <br>
+            <input type="checkbox" >Translator <br>
+            <input type="checkbox" >Social Media Researcher <br>
+            <input type="checkbox" >Ask the Specialist <br>
+            <input type="checkbox" >Spokesperson <br>
+       <br>
+            <label for="">Number of Hours Available to Volunteer Each Week</label> <br>
+            <input type="radio" name="va" >1-5 <br>
+            <input type="radio" name="va" >5-10 <br>
+            <input type="radio" name="va" >10-15 <br>
+            <input type="radio" name="va" >15-20 <br>
+    
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+</body>
+</html>
+
